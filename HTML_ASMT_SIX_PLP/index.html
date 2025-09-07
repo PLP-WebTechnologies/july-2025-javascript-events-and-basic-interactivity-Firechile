@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Web App</h1>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter -->
+    <section>
+      <h2>Counter Game 🎮</h2>
+      <p id="counter">0</p>
+      <button id="increment-btn">Increase</button>
+      <button id="reset-btn">Reset</button>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+      <h2>FAQ ❓</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is this project?</button>
+        <p class="faq-answer">It’s a demo of JavaScript interactivity with events and validation.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How does form validation work?</button>
+        <p class="faq-answer">It checks your input using conditions and regex before submitting.</p>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section>
+      <h2>Signup Form 📝</h2>
+      <form id="signup-form">
+        <label>
+          Name:
+          <input type="text" id="name" />
+          <span class="error" id="name-error"></span>
+        </label>
+        <label>
+          Email:
+          <input type="email" id="email" />
+          <span class="error" id="email-error"></span>
+        </label>
+        <label>
+          Password:
+          <input type="password" id="password" />
+          <span class="error" id="password-error"></span>
+        </label>
+        <button type="submit">Submit</button>
+        <p id="form-success" class="success"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
